@@ -33,7 +33,7 @@ const _items = [
   {
     label: "Item 5",
   },
-].map((item, index) => ({ ...item, index, id: crypto.randomUUID() }));
+].map((item) => ({ ...item, id: crypto.randomUUID() }));
 
 function App() {
   const [items, setItems] = useState(_items);
